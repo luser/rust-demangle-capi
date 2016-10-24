@@ -1,0 +1,15 @@
+[package]
+name = "rust-demangle-capi"
+version = "0.1.0"
+authors = ["Ted Mielczarek <ted@mielczarek.org>"]
+build = "build.rs"
+
+[lib]
+name = "rust_demangle"
+crate-type = ["staticlib"]
+
+[dependencies]
+rustc-demangle = {path = "../rustc-demangle"}
+
+[build-dependencies]
+rusty-cheddar = "0.3.0"
