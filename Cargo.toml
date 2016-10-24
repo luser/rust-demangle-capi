@@ -9,7 +9,7 @@ name = "rust_demangle"
 crate-type = ["staticlib"]
 
 [dependencies]
-rustc-demangle = {path = "../rustc-demangle"}
+rustc-demangle = {git = "https://github.com/alexcrichton/rustc-demangle/", rev = "1523aeb635e57cf2223d2f7da4c19de8a07d4195"}
 
 [build-dependencies]
 rusty-cheddar = "0.3.0"
